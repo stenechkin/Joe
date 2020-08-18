@@ -35,7 +35,7 @@ soup = BeautifulSoup(page_text, features="lxml")
 url_list = soup.find_all('a', {'class': 'mzr-tc-group-item-href'})
 
 db = []
-for number, url_element in enumerate(url_list[0::]):
+for number, url_element in enumerate(url_list[0:3:]):
     href = url_element.get('href')
     url_name = url_element.text
 
