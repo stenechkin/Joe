@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-import urllib3  # игнорирование ошибок сертификата в https
+import urllib3
 
 urllib3.disable_warnings()
 
